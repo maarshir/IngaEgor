@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Инга & Егор — 16.08.2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Pinyon+Script&family=Cousine:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== CONTINUOUS RED LINE (path is generated in script.js) ===== -->
+<div class="red-line-wrap" aria-hidden="true">
+  <svg preserveAspectRatio="none" viewBox="0 0 100 3200" xmlns="http://www.w3.org/2000/svg">
+    <path id="redline" d=""/>
+  </svg>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="date reveal">16 &middot; 08 &middot; 2026</div>
+    <h1 class="display reveal d1">ИНГА <span class="amp">&amp;</span> ЕГОР</h1>
+    <div class="our-day script reveal d2">Our wedding day!</div>
+    <img class="hero-photo reveal d3" src="picture/hero.jpg" alt="Инга и Егор">
+    <div class="scroll-cue reveal d3">
+      <span class="lbl">листайте вниз</span>
+      <span class="chev"></span>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section class="letter">
+    <div class="wrap">
+      <h2 class="display reveal">ДОРОГИЕ ГОСТИ!</h2>
+      <div class="envelope reveal d1">
+        <img src="picture/email.png" alt="Конверт">
+        <p class="note">Это официальное приглашение на нашу свадьбу! А получили вы его потому, что мы очень хотим видеть вас в этот день рядом с нами!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section class="calendar">
+    <div class="wrap">
+      <div class="cal-grid reveal">
+        <div class="cal-cell">
+          <div class="wd">СУББОТА</div>
+          <div class="mo">Август</div>
+          <div class="dd">15</div>
+        </div>
+        <div class="cal-cell">
+          <div class="wd">ВОСКРЕСЕНЬЕ</div>
+          <div class="mo">Август</div>
+          <div class="dd">16</div>
+        </div>
+        <div class="cal-cell">
+          <div class="wd">ПОНЕДЕЛЬНИК</div>
+          <div class="mo">Август</div>
+          <div class="dd">17</div>
+        </div>
+        <img class="cal-heart" src="picture/heart-calendar.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section class="venue">
+    <div class="wrap">
+      <h2 class="display reveal">МЕСТО<br>ПРОВЕДЕНИЯ</h2>
+      <div class="script reveal d1">Save the place!</div>
+      <p class="place reveal d1">«Солнечный Берег», Веранда «Мыс»<br>Московская область, городской округ Мытищи</p>
+      <img class="venue-photo reveal d2" src="picture/venue.png" alt="Место проведения">
+      <a class="btn reveal d2" href="https://yandex.ru/maps/org/solnechny_bereg/74953171641/?ll=37.653981%2C56.011019&z=11" target="_blank" rel="noopener">Как добраться</a>
+    </div>
+  </section>
+
+  <!-- TIMING -->
+  <section class="timing">
+    <div class="wrap">
+      <h2 class="display reveal">ТАЙМИНГ</h2>
+      <div class="script reveal d1">Of the day</div>
+      <div class="timeline reveal d2">
+        <div class="tl-item"><div class="t">16:00</div><div class="l">Welcome-<br>фуршет</div></div>
+        <div class="tl-item"><div class="t">16:45</div><div class="l">Выездная<br>церемония</div></div>
+        <div class="tl-item"><div class="t">17:30</div><div class="l">Банкет</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section class="dress">
+    <div class="wrap">
+      <h2 class="display reveal">ДРЕСС-КОД</h2>
+      <p class="lead reveal d1">Мы очень ждём и готовимся к нашему незабываемому дню! Поддержите нас Вашими улыбками и объятиями, а также красивыми нарядами в палитре мероприятия</p>
+      <img class="palette reveal d1" src="picture/palette.png" alt="Палитра">
+      <div class="dress-cols">
+        <div class="dress-col reveal d2">
+          <div class="cap">Ladies</div>
+          <img src="picture/ladies.png" alt="Образы для дам">
+          <div class="note">Пожалуйста, избегайте белого, чёрного и красного цветов в своих образах.</div>
+        </div>
+        <div class="dress-col reveal d3">
+          <div class="cap">Gents</div>
+          <img src="picture/man.png" alt="Образы для джентльменов">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown">
+    <div class="cd-card reveal">
+      <h2 class="display">ДО СВАДЬБЫ<br>ОСТАЛОСЬ</h2>
+      <div class="script">Waiting for you!</div>
+      <div class="cd-grid">
+        <div class="cd-unit"><div class="num" id="cd-d">00</div><div class="lab">Дней</div></div>
+        <div class="cd-unit"><div class="num" id="cd-h">00</div><div class="lab">Часов</div></div>
+        <div class="cd-unit"><div class="num" id="cd-m">00</div><div class="lab">Минут</div></div>
+        <div class="cd-unit"><div class="num" id="cd-s">00</div><div class="lab">Секунд</div></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WISHES -->
+  <section class="wishes">
+    <div class="wrap">
+      <h2 class="display reveal">ПОЖЕЛАНИЯ</h2>
+      <div class="script reveal d1">Our wishes</div>
+      <div class="body reveal d2">
+        <span class="arrow l">&larr;</span>
+        <span class="arrow r">&rarr;</span>
+        Ваше присутствие — важнее всего для нас. Мы не хотим обременять вас выбором подарка, поэтому будем рады вкладу в нашу мечту о путешествии. Это поможет нам реализовать задуманное!<br><br>
+        Будем благодарны, если Вы воздержитесь от криков «Горько» на празднике, ведь поцелуй — знак выражения чувств, а мы очень стеснительные.
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts">
+    <div class="wrap">
+      <h2 class="display reveal">Если возникнут вопросы</h2>
+      <div class="contact-grid">
+        <div class="contact-card reveal d1">
+          <div class="role">Организатор</div>
+          <div class="nm">Мадина</div>
+          <a href="tel:+79096975316">+7 909 697 53 16</a>
+          <!-- ВСТАВЬТЕ USERNAME: замените TELEGRAM_MADINA на ник в Telegram -->
+          <a class="ig" href="https://t.me/madina12mk" target="_blank" rel="noopener">Telegram</a>
+        </div>
+        <div class="contact-card reveal d2">
+          <div class="role">Ведущий</div>
+          <div class="nm">Дмитрий</div>
+          <a href="tel:+79159132680">+7 915 913 26 80</a>
+          <!-- ВСТАВЬТЕ USERNAME: замените TELEGRAM_DMITRY на ник в Telegram -->
+          <a class="ig" href="https://t.me/ozolin_event" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+      <svg class="tg-plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 2.5 11.7c-.9.4-.9 1.6 0 1.9l4.9 1.6 1.9 5.8c.3.8 1.2 1 1.8.4l2.6-2.5 4.8 3.5c.6.4 1.5.1 1.7-.7l3-15c.2-1-.7-1.8-1.6-1.4ZM9.4 14.7l-.3 3.8-1.2-3.9 9.4-6.3-7.7 6.6Z"/></svg>
+    </div>
+  </section>
+
+  <!-- TELEGRAM GROUP -->
+  <section class="tg-group">
+    <div class="wrap">
+      <h2 class="display reveal">НАШ СВАДЕБНЫЙ ЧАТ</h2>
+      <div class="script reveal d1">Stay connected!</div>
+      <p class="tg-lead reveal d2">Приглашаем вас вступить в нашу группу для получения актуальной информации о празднике.</p>
+      <a class="btn reveal d2" href="https://t.me/+1wi4vWtSPq4xOGYy" target="_blank" rel="noopener">Вступить в группу</a>
+    </div>
+  </section>
+
+  <!-- GUEST FORM -->
+  <section class="anketa">
+    <div class="anketa-hero" style="background-image:url('picture/anketa.jpg')">
+      <div class="anketa-card reveal">
+        <h2 class="display">Анкета гостя</h2>
+        <p>Пожалуйста, подтвердите свое присутствие до</p>
+        <div class="when">16 июля 2026</div>
+        <button class="btn" id="openForm">Подтвердить</button>
+      </div>
+    </div>
+
+    <div class="form-panel" id="formPanel">
+      <h3>Анкета гостя</h3>
+      <div class="sub">Заполните, пожалуйста, поля ниже</div>
+
+      <!-- ===== GOOGLE FORM SUBMISSION ===== -->
+      <!-- Подключено к Google Форме. Значения Да/Нет должны точно совпадать с вариантами в форме -->
+      <form id="rsvpForm"
+            action="https://docs.google.com/forms/d/e/1FAIpQLScxN0CE1GbEAbSIPU2NBAeZ71qo7UJLNJpvfwthTDTpzrTIvQ/formResponse"
+            method="POST" target="hidden_iframe">
+
+        <div class="field">
+          <label>Имя и Фамилия</label>
+          <input type="text" name="entry.1585561739" placeholder="Иван Иванов" required>
+        </div>
+
+        <div class="field">
+          <label>Будете ли присутствовать?</label>
+          <div class="choices">
+            <label class="choice"><input type="radio" name="entry.487464047" value="Да" required> С удовольствием приду!</label>
+            <label class="choice"><input type="radio" name="entry.487464047" value="Нет"> К сожалению, не смогу</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Пищевые аллергии</label>
+          <input type="text" name="entry.1750183610" placeholder="Укажите, если есть">
+        </div>
+
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+
+    <div class="form-thanks" id="formThanks">
+      <div class="script">Thank you!</div>
+      <p class="mono" style="margin-top:.6em">Спасибо! Ваш ответ записан.</p>
+    </div>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none" tabindex="-1"></iframe>
+  </section>
+
+  <!-- FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <div class="bye reveal">До скорой встречи!<br>С любовью,</div>
+      <h2 class="display reveal d1">ИНГА<span class="amp">&amp;</span>ЕГОР</h2>
+      <div class="final-photo reveal d2">
+        <img class="bg" src="picture/final.jpg" alt="Инга и Егор">
+        <img class="heart-gif" src="picture/heart.gif" alt="">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+
+<!-- ===== BACKGROUND MUSIC ===== -->
+<button id="bgmBtn" class="bgm-btn" aria-label="Включить музыку" aria-pressed="false" title="Музыка">
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g class="note" style="transform-origin:center">
+      <path d="M9 17V7l9-2v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="7" cy="17" r="2.3" fill="currentColor"/>
+      <circle cx="16" cy="15" r="2.3" fill="currentColor"/>
+    </g>
+    <line class="slash" x1="3" y1="3" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<!-- Замените music.mp3 на имя вашего файла (он лежит в корне рядом с index.html) -->
+<audio id="bgm" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
