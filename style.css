@@ -154,12 +154,18 @@ section{
 .dress{text-align:center}
 .dress h2{font-size:clamp(2.6rem,9vw,5.4rem);margin-bottom:.7em}
 .dress .lead{max-width:560px;margin:0 auto 2em;font-size:clamp(.7rem,1.8vw,.9rem);line-height:1.9}
-.palette{width:min(320px,80vw);margin:0 auto 3em;border:1px solid var(--hair)}
+.palette{width:min(320px,80vw);margin:0 auto 3em;border:1px solid var(--red);box-shadow:0 18px 44px -26px rgba(0,0,0,.6)}
 .dress-cols{display:flex;gap:5vw;justify-content:center;flex-wrap:wrap;align-items:flex-start}
 .dress-col{flex:1 1 380px;max-width:520px}
 .dress-col .cap{font-family:"Pinyon Script",cursive;color:var(--red);font-size:clamp(2rem,5vw,2.8rem);margin-bottom:.4em}
 .dress-col .note{font-family:"Playfair Display",serif;font-style:italic;letter-spacing:.08em;font-size:clamp(.78rem,2vw,1rem);margin-top:1em;color:var(--ink-soft)}
-.dress-col img{border:1px solid #111;box-shadow:0 18px 44px -26px rgba(0,0,0,.6)}
+.dress-col img{border:1px solid var(--red);box-shadow:0 18px 44px -26px rgba(0,0,0,.6)}
+
+/* ===== TELEGRAM GROUP ===== */
+.tg-group{text-align:center}
+.tg-group h2{font-size:clamp(2.6rem,9vw,5.4rem);margin-bottom:.12em}
+.tg-group .script{font-size:clamp(1.5rem,4.4vw,2.4rem);margin-bottom:1.1em}
+.tg-lead{max-width:480px;margin:0 auto 2em;font-size:clamp(.7rem,1.8vw,.9rem);line-height:1.9;letter-spacing:.04em}
 
 /* ===== COUNTDOWN ===== */
 .countdown{display:flex;justify-content:center}
